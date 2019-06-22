@@ -1,0 +1,90 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+h1,h2,h3,h4
+	font-family: $title-font
+	font-variant: small-caps
+p
+	font-family: $default-font
+#main_header
+	background-color: $accent
+.bg-light
+		background: transparent !important
+.logo
+	height: 32px
+ul
+	margin: 0px auto
+a.nav-link
+	color: white !important
+	font-size: 9px
+	font-family: $title-font
+	font-weight: 300
+	text-transform: uppercase
+	margin: 2px 10px
+.feedback
+	color: white
+	border-color: white
+	font-size: 9px
+	text-transform: uppercase
+.feedback:hover
+	background-color: white
+	border-color: $accent
+	color: $accent
+
+@import "media" // Всегда в конце
