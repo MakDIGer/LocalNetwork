@@ -60,8 +60,15 @@ body
 h1,h2,h3,h4
 	font-family: $title-font
 	font-variant: small-caps
+	color: $titleColor
 p
 	font-family: $default-font
+
+.box
+	background: white
+	min-height: 320px
+	padding: 40px 25px
+	margin-bottom: 80px
 #main_header
 	background-color: $accent
 .bg-light
@@ -77,14 +84,96 @@ a.nav-link
 	font-weight: 300
 	text-transform: uppercase
 	margin: 2px 10px
+a.nav-link:hover
+	opacity: 0.8
 .feedback
 	color: white
 	border-color: white
 	font-size: 9px
 	text-transform: uppercase
+	padding-top: 8px
+	padding-bottom: 5px
 .feedback:hover
 	background-color: white
 	border-color: $accent
 	color: $accent
+#section_1
+	background-color: white
+	background-image: url('../img/bgsection1.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	min-height: 650px
+#section_1 h1
+	padding-top: 15%
+	color: $accent
+	font: 44px $title-font
+	font-weight: 600
+	font-variant: small-caps
+	line-height: 1.2
+#section_1 h2
+	margin-top: 4%
+	font: 22px $title-font
+	font-variant: small-caps
+	font-weight: 500
+	line-height: 1
+#section_1 .more
+	margin-top: 6%
+.more
+	color: white
+	border-color: $accent
+	background-color: $accent
+	font-size: 9px
+	text-transform: uppercase
+	padding-top: 8px
+	padding-bottom: 5px
+.more:hover
+	background-color: white
+	border-color: white
+	color: $accent
+#section_2
+	min-height: 470px
+#section_2 h2
+	text-align: center
+	margin-top: 80px
+	font-weight: 600
+	font: 32px $title-font
+	font-variant: small-caps
+.mt80px
+	margin-top: 80px
+#section_2 ul
+	font: 14px $default-font
+	line-height: 1.286
+	color: $fontColor
+#section_2 img
+	display: block
+#section_2 ul
+	display: block
+	list-style-image: url('../img/arrow.png')
+#section_2 .more
+	margin: 32px 40px 80px 40px
+#section_3
+	background-color: $bgColor2
+	min-height: 620px
+#section_3 .box
+	margin-top: 80px
+#section_3 h2
+	text-align: center
+	padding-top: 80px
+	font-weight: 600
+	font: 32px $title-font
+	font-variant: small-caps
+#section_3 .fa
+	font-size: 34px
+#section_3 h3
+	font: 24px $title-font
+	margin-top: 20px
+	font-variant: small-caps
+	font-weight: 500
+#section_3 p
+	font: 14px $default-font
+	margin-top: 20px
+	line-height: 1.286
+	color: $fontColor
 
 @import "media" // Всегда в конце
