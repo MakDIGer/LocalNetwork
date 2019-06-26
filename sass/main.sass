@@ -66,7 +66,7 @@ p
 
 .box
 	background: white
-	min-height: 320px
+	height: 380px
 	padding: 40px 25px
 	margin-bottom: 80px
 #main_header
@@ -84,10 +84,13 @@ a.nav-link
 	font-weight: 300
 	text-transform: uppercase
 	margin: 2px 10px
+	transition: all 0.1s ease
 a.nav-link:hover
-	opacity: 0.8
+	opacity: 0.6
+	transition: all 0.6s ease
 .feedback
 	color: white
+	background-color: transparent
 	border-color: white
 	font-size: 9px
 	text-transform: uppercase
@@ -132,10 +135,10 @@ a.nav-link:hover
 	border-color: white
 	color: $accent
 #section_2
-	min-height: 470px
+	min-height: 560px
 #section_2 h2
 	text-align: center
-	margin-top: 80px
+	padding-top: 80px
 	font-weight: 600
 	font: 32px $title-font
 	font-variant: small-caps
@@ -154,9 +157,10 @@ a.nav-link:hover
 	margin: 32px 40px 80px 40px
 #section_3
 	background-color: $bgColor2
-	min-height: 620px
+	min-height: 650px
 #section_3 .box
 	margin-top: 80px
+	border-radius: 10px
 #section_3 h2
 	text-align: center
 	padding-top: 80px
@@ -175,5 +179,78 @@ a.nav-link:hover
 	margin-top: 20px
 	line-height: 1.286
 	color: $fontColor
+#section_4
+	min-height: 450px
+#section_4 h2
+	text-align: center
+	padding-top: 80px
+	font-weight: 600
+	font: 32px $title-font
+	font-variant: small-caps
+#section_4 h3
+	text-align: center
+	padding-top: 20px
+	font-weight: 600
+	font: 24px $title-font
+	font-variant: small-caps
+#section_4 .brand
+	text-align: center
+	margin: 120px 20px
+	opacity: 0.3
+	transition: all 0.5s ease
+	height: 120px
+	display: block
+#section_4 .brand:hover
+	opacity: 1
+	transition: all 0.8s ease
+.owl-item
+	height: 300px
+.owl-dot
+	margin-top: 0px
+	background: transparent
+	margin-bottom: 80px
+#section_5
+	background-color: $bgColor2
+	min-height: 450px
+#section_5 h2
+	text-align: center
+	padding-top: 80px
+	font-weight: 600
+	font: 32px $title-font
+	font-variant: small-caps
+#section_5 h3
+	text-align: center
+	padding-top: 20px
+	font-weight: 600
+	font: 24px $title-font
+	font-variant: small-caps
+#section_5 form
+	margin-top: 40px
+	margin-bottom: 80px
+#section_5 input
+	border-color: white
+	background-color: white
+#section_5 textarea
+	border-color: white
+	background-color: white
+#section_5 .btn-reset
+	background-color: transparent
+	border-color: $accent
+	color: $accent
+	font-size: 9px
+	text-transform: uppercase
+	padding-top: 8px
+	padding-bottom: 5px
+#section_5 .btn-reset:hover
+	background-color: $accent
+	border-color: white
+	color: white
+#main_footer
+	background-color: $accent
+	color: white
+	text-align: center
+	min-height: 60px
+#main_footer p
+	margin-top: 16px
 
 @import "media" // Всегда в конце
