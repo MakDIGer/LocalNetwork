@@ -7,10 +7,14 @@
 
 	<title>KGDNET.RU | Домашняя локальная сеть.</title>
 	<meta name="description" content="Домашняя локальная сеть www.kgdnet.ru">
+	
+	<meta name="yandex-verification" content="e428a4aa49ec6fd4" />
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<meta property="og:url" content="http://kgdnet.ru/">
+	<meta property="og:type" content="website">
 	<meta property="og:title" content="KGDNET.RU">
 	<meta property="og:image" content="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -27,6 +31,33 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+	<noindex>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143343153-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-143343153-1');
+		</script>
+
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		   ym(54285055, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true
+		   });
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/54285055" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</noindex>
+
 </head>
 
 <body>
@@ -38,7 +69,7 @@
 		<header id="main_header" class="sticky">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a class="navbar-brand" href="#"><img class="logo" src="img/favicon/favicon.png" alt="Домашняя локальная сеть KGDNET.RU"></a>
+				  <a class="navbar-brand" href="/"><img class="logo" src="img/favicon/favicon.png" alt="Домашняя локальная сеть KGDNET.RU"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
@@ -147,7 +178,7 @@
 				<h3>Есть вопрос? - Напишите нам!</h3>
 				<div class="row">
 					<div class="offset-md-3 col-md-6">
-						<form>
+						<form id="send_form" method="POST">
 						  <div class="form-group">
 						    <input type="text" class="form-control" id="name" name="name" placeholder="Ваше имя" required>
 						  </div>

@@ -49,4 +49,21 @@ $('.owl-carousel').owlCarousel({
     $('body,html').animate({scrollTop:0},800);
  
     });
+
+      //E-mail Ajax Send
+  $("form").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function() {
+      alert("Спасибо за обратную связь!");
+      setTimeout(function() {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
 });
